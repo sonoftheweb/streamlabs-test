@@ -2,6 +2,12 @@
 ## Description
 This is a simple application that allows users to authenticate with either Google or Twitch account. Once authenticated, they are allowed to see a feed of events concerning subscriptions, followers, donations and merchandise sales. The application is built using Laravel as the stateless backend and Vue.js as the frontend framework. The application is not deployed anywhere, so it has to be run locally. 
 
+
+
+https://github.com/sonoftheweb/streamlabs-test/assets/1128096/b38c7ac7-9285-401c-9f39-e6c12b5717e4
+
+
+
 ## Installation
 ### Prerequisites
 - PHP 8.1 or higher
