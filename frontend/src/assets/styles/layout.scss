@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100 text-[14px] text-slate-500;
+}
+
+.wide-center {
+  @apply w-screen h-screen flex justify-center items-center;
+}

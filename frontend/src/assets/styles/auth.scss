@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//rounded shadow-[0_35px_60px_-7px_rgba(0,0,0,0.3)]
+.login {
+  @apply w-full md:w-[250px];
+}
+
+.login-button {
+  @apply inline-flex w-full justify-center items-center gap-x-1.5 rounded px-3 py-2 text-sm text-white shadow-sm;
+
+  &.google {
+    @apply bg-red-500 hover:bg-red-600;
+  }
+
+  &.twitch {
+    @apply bg-[#5a3e85] hover:bg-[#47306a];
+  }
+}
