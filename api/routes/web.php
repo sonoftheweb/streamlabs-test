@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(\App\Http\Controllers\Auth\ExternalAuthController::class)->group(function () {
+    Route::get('auth/{provider}', 'redirectToProvider');
+});
+
+Route::fallback(function () {
+    return 'Nothing to see here...';
 });
