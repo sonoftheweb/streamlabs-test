@@ -27,13 +27,13 @@ export const useApiStore = defineStore('api', () => {
     }
   }
 
-  // Log the request details
-  axiosInstance.interceptors.request.use((config) => {
-    console.log('Route:', config.url)
-    console.log('Request Headers:', config.headers)
-    console.log('Authorization Header:', config.headers['Authorization'])
-    return config
-  })
+  // Log the request details, used for debug purposes
+  // axiosInstance.interceptors.request.use((config) => {
+  //   console.log('Route:', config.url)
+  //   console.log('Request Headers:', config.headers)
+  //   console.log('Authorization Header:', config.headers['Authorization'])
+  //   return config
+  // })
 
   // Loading state handler
   axiosInstance.interceptors.request.use((config) => {
